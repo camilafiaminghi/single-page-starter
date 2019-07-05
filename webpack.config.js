@@ -25,6 +25,14 @@ const config = {
 	module: {
 		rules: [
 			{
+	      test: /\.js$/,
+	      exclude: /(node_modules)/,
+	      use: {
+	        loader: 'babel-loader'
+	      }
+	    },
+
+			{
 				test: /\.handlebars$/,
 				loader: 'handlebars-loader',
 				query: {
@@ -139,8 +147,6 @@ const config = {
 };
 
 module.exports = (evn, argv) => {
-	// console.log(argv);
-
 	if (isProd) {
 		config.optimization = {
 	    minimizer: [
