@@ -1,0 +1,26 @@
+/// Variable description
+/// @group group_name
+/// @access public
+/// @type Number||String||Color||List||Map||Bollean||Null
+/// $example-variable-number: 1em + 1em;
+
+/// Breakpoints to insert media rules
+/// @group responsive
+/// @access public
+/// @type String
+$xs-device-max: '(max-width: 543px)';    // Max width Extra small device
+$sm-device-max: '(max-width: 767px)';    // Max width Small device
+$md-device-max: '(max-width: 991px)';    // Max width Medium device
+$lg-device-max: '(max-width: 1199px)';   // Max width Large device
+$xs-device-min: '(min-width: 544px)';    // Min width Extra small device
+$sm-device-min: '(min-width: 768px)';    // Min width Small device
+$md-device-min: '(min-width: 992px)';    // Min width Medium device
+$lg-device-min: '(min-width: 1200px)';   // Min width Large device
+$xl-device-min: '(min-width: 1600px)';   // Min width Large device
+$md-sp-device-min: '(min-width: 920px)'; // Min width Medium device
+
+
+$default-color: #eee;
+$base-color: #000;
+$base-font-size: 1em;
+$base-line-height: 1.35em;

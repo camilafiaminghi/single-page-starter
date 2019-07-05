@@ -1,0 +1,39 @@
+/// Create media rules for the given breakpoint
+/// @group helpers
+/// @param {Number} $base - smaller value
+/// @require $breakpoint
+/// @output 'max-width', 'margin' and 'width'
+/// @include breakpoint($xl-device-min) { }
+@mixin breakpoint($breakpoint) {
+	@media #{$breakpoint} {
+		@content;
+	}
+}
+
+/// Generate headings rules
+/// @group helpers
+/// @param {Number} $base - smaller value
+/// @param {Number} $scale - value sums to base
+/// @output h1, .h1 { font-size: 2em;  }
+/// @include generateHeadings(0.9em, 0.2em) { }
+@mixin generateHeadings($base, $scale) {
+	@for $i from 1 through 6 {
+	  h#{$i},
+	  .h#{$i} {
+	    font-size: $base + $scale * (6 - $i);
+	  }
+	}
+}
+
+/// Responsive flex box
+/// @group helpers
+/// @param {String} $breakpoint
+/// @include responsiveFlex($xl-device-min) { }
+@mixin responsiveFlex($breakpoint) {
+	display: flex;
+	flex-direction: column;
+
+	@include breakpoint($breakpoint) {
+		flex-direction: row;
+	}
+}

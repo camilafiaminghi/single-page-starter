@@ -1,0 +1,32 @@
+{
+  "name": "single-page-starter",
+  "version": "1.0.0",
+  "main": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=dev-server webpack-dev-server --hot --mode development",
+    "watch": "NODE_ENV=dev webpack --progress --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "handlebars": "^4.1.2",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "terser-webpack-plugin": "^1.3.0"
+  }
+}

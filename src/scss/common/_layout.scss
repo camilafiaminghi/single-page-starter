@@ -1,0 +1,30 @@
+body {
+	background-color: $default-color;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: lighten($base-color, 30);
+}
+
+@include generateHeadings($base-font-size, 0.2em)
+
+header {
+	padding: 0 2em;
+	background-color: lighten($default-color, 30);
+	justify-content: space-between;
+	align-items: center;
+
+	@include responsiveFlex($sm-device-min)
+}
+
+nav {
+	@include responsiveFlex($md-device-min)
+
+	a {
+		margin: 0 0 0 0.8em;
+	}
+}
+
+section {
+	margin: 2em;
+}

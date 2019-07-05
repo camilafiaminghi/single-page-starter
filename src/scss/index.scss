@@ -1,0 +1,15 @@
+/// Normalize
+/// @group configuration
+@import './../../node_modules/normalize.css';
+
+/// Mixins
+/// @group common
+@import './common/mixins';
+
+/// Variables
+/// @group common
+@import './common/variables';
+
+/// Layout
+/// @group common
+@import './common/layout';
