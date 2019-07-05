@@ -4,6 +4,8 @@ Creates a single page project using:
 - Webpack
 - Handlebars
 - Sass
+- Babel
+- Jest
 
 Initial structure of the project:
 ```
