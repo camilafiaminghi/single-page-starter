@@ -1,11 +1,11 @@
 ## Single Page Starter
 
 Creates a single page project using:
-- Webpack
-- Handlebars
-- Sass
-- Babel
-- Jest
+- [Webpack](https://webpack.js.org/)
+- [Handlebars](http://handlebarsjs.com/)
+- [Sass](https://sass-lang.com/)
+- [Babel](https://babeljs.io/)
+- [Jest](https://jestjs.io/docs/en/getting-started), [jest-dom](https://github.com/testing-library/jest-dom), [@testing-library/dom](https://testing-library.com/docs/intro)
 
 Initial structure of the project:
 ```
